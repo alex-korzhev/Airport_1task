@@ -44,7 +44,7 @@
             this.btn_open_file.Name = "btn_open_file";
             this.btn_open_file.Size = new System.Drawing.Size(207, 50);
             this.btn_open_file.TabIndex = 0;
-            this.btn_open_file.Text = "Open File";
+            this.btn_open_file.Text = "Открыть файл";
             this.btn_open_file.UseVisualStyleBackColor = true;
             this.btn_open_file.Click += new System.EventHandler(this.btn_open_file_Click);
             // 
@@ -85,7 +85,7 @@
             this.btn_load_files.Name = "btn_load_files";
             this.btn_load_files.Size = new System.Drawing.Size(207, 38);
             this.btn_load_files.TabIndex = 3;
-            this.btn_load_files.Text = "Load Files";
+            this.btn_load_files.Text = "Загрузить ранее открытые файлы";
             this.btn_load_files.UseVisualStyleBackColor = true;
             this.btn_load_files.Click += new System.EventHandler(this.btn_load_files_Click);
             // 
@@ -98,7 +98,7 @@
             this.lbl_opened_files.Name = "lbl_opened_files";
             this.lbl_opened_files.Size = new System.Drawing.Size(201, 23);
             this.lbl_opened_files.TabIndex = 2;
-            this.lbl_opened_files.Text = "Opened Files List:";
+            this.lbl_opened_files.Text = "Список открытых фалов:";
             this.lbl_opened_files.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tb_main_text
@@ -120,7 +120,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.Text = "Form1";
+            this.Text = "Текстовые файлы";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
