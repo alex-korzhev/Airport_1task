@@ -62,6 +62,7 @@
             this.lv_opened_files.UseCompatibleStateImageBehavior = false;
             this.lv_opened_files.View = System.Windows.Forms.View.List;
             this.lv_opened_files.Click += new System.EventHandler(this.lv_opened_files_Click);
+            this.lv_opened_files.DoubleClick += new System.EventHandler(this.lv_opened_files_DoubleClick);
             // 
             // columnHeader1
             // 
@@ -116,7 +117,9 @@
             this.ClientSize = new System.Drawing.Size(743, 316);
             this.Controls.Add(this.tb_main_text);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "Form1";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.panel1.ResumeLayout(false);

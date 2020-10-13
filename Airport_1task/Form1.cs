@@ -48,6 +48,19 @@ namespace Airport_1task
         {
             fh.SaveFileList();
         }
+
+        private void lv_opened_files_DoubleClick(object sender, EventArgs e)
+        {
+            try
+            {
+                ListViewItem selectedFile = lv_opened_files.SelectedItems[0];
+                System.Diagnostics.Process.Start(selectedFile.Tag.ToString());
+            }
+            catch (ArgumentOutOfRangeException)
+            {
+
+            }
+        }
     }
 
     public class FileHandler
