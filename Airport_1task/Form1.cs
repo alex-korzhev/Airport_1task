@@ -138,8 +138,8 @@ namespace Airport_1task
         {
             ofd = new OpenFileDialog();
             //Filter .txt files only
-            ofd.Filter = "txt files (*.txt)|*.txt";
-            ofd.FilterIndex = 1;
+            //ofd.Filter = "txt files (*.txt)|*.txt";
+            //ofd.FilterIndex = 1;
             if (ofd.ShowDialog() == DialogResult.OK)
             {
                 //If text file was already opened (decided by file path) - return the existing TF.
