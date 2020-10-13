@@ -53,6 +53,7 @@
             this.columnHeader1});
             this.lv_opened_files.HideSelection = false;
             this.lv_opened_files.Location = new System.Drawing.Point(0, 79);
+            this.lv_opened_files.MultiSelect = false;
             this.lv_opened_files.Name = "lv_opened_files";
             this.lv_opened_files.Size = new System.Drawing.Size(207, 217);
             this.lv_opened_files.TabIndex = 1;

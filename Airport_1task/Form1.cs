@@ -46,9 +46,10 @@ namespace Airport_1task
             ofd = new OpenFileDialog();
             if (ofd.ShowDialog() == DialogResult.OK)
             {
-                if (textFiles.Exists(tf => tf.Name == ofd.FileName))
+                TextFile temptf = textFiles.Find(tf => tf.Path == ofd.FileName);
+                if (temptf != null)
                 {
-                    showFile(textFiles.Find(tf => tf.Name == ofd.FileName));
+                    showFile(temptf);
                     return null;
                 }
                 else
@@ -82,6 +83,8 @@ namespace Airport_1task
         private void showFile(TextFile tf)
         {
             tb_main_text.Text = tf.Text;
+            lv_opened_files.Items[textFiles.IndexOf(tf)].Selected = true;
+            lv_opened_files.Select();
         }
     }
 
